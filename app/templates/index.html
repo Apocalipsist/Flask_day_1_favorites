@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/main.css') }}">
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <div class="container">
+          <h1 class="logo"><a href="{{ url_for('index') }}">Apocalipsis Website</a></h1>
+          <strong><nav>
+            <ul class="menu">
+              <li><a href="{{ url_for('index') }}">Home</a></li>
+              <li><a href="{{ url_for('favorite') }}">Favorite List</a></li>
+            </ul>
+          </nav></strong>
+        </div>
+    </header>
+    <div class="kenobi">
+        <h1>Hello There</h1>
+        <img src="https://deseret.brightspotcdn.com/dims4/default/9a9465f/2147483647/strip/false/quality/90/?url=https%3A%2F%2Fcdn.vox-cdn.com%2Fthumbor%2FJ44RCLyA4dkPAJ6NmIyStIyz008%3D%2F0x0%3A2020x1086%2F2020x1086%2Ffilters%3Afocal%281010x543%3A1011x544%29%2Fcdn.vox-cdn.com%2Fuploads%2Fchorus_asset%2Ffile%2F18124273%2F89d54f8161" alt="">
+        <p>Please follow links above.</p>
+    </div>
+
+
+</body>
+</html>
