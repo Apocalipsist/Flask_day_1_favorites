@@ -1,3 +1,7 @@
+body{
+    background-color: aliceblue;
+}
+
 .container{
     display: flex;
     flex-flow: row;
@@ -20,6 +24,7 @@
 
 .menu{
     display: flex;
+    justify-content: space-between;
 
 }
 .menu li{

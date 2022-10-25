@@ -12,29 +12,32 @@
 <body>
     <header>
         <div class="container">
-          <h1 class="logo"><a href="{{ url_for('index') }}"></a>Apocalipsis Website</a></h1>
+          <h1 class="logo"><a href="{{ url_for('index') }}"></a>Favorite</a> | Top 5</h1>
           <strong><nav>
-            <ul class="menu">
-              <li><a href="{{ url_for('index') }}">Home</a></li>
-              <li><a href="{{ url_for('favorite') }}">Favorite List</a></li>
-            </ul>
+            <div>
+                <ul class="menu">
+                    <div><li><a href="{{ url_for('index') }}">Home</a></li></div>
+                    <div><li><a href="{{ url_for('favorites') }}">Favorite List</a></li></div>
+                </ul>
+            </div>
           </nav></strong>
         </div>
     </header>
     <div class="content">
-        <h1>Hello class</h1>
-        <h3>Here are a list of my favorites:</h3>
+        <h1>Hello class.</h1>
+        <h3>Here are a list of my favorites things:</h3>
         <p>When it comes to actors in no particular order:</p>
         <strong>
-            <ul>
-                {% for a in act %}
-                <li>
-                    {{ a.title() }}<br>
-                </li>
-                {% endfor %}
-            </ul>
+            <div>
+                <ul>
+                    {% for a in act %}
+                    <li>
+                        {{ a.title() }}<br>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
         </strong>
-        <h3>Here are a list of my favorites:</h3>
         <p>When it comes to pop artist in no particular order:</p>
         <strong>
             <ul>
